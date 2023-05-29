@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+}
+.main.active{
+    background: #000;
+    color: #fff;
+}
+h1,h2{
+    font-size: inherit;
+    font-weight: inherit;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.section{
+    padding: 0 15px;
+}
+.title {
+    text-transform: uppercase;
+    font-size: 32px;
+    margin-bottom: 31px;
+    font-weight: 400;
+}
+.dark-change{
+    position: absolute;
+    width: 50px;
+    height: 26px;
+    border: 2px solid #000;
+    border-radius:20px;
+    right: 50%;
+    cursor: pointer;
+} 
+.dark-change::before{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    left: 1px;
+    top: 1px;
+    border-radius: 50%;
+    background:#000000;
+    transition: 0.5s;
+}
+.dark-change.active:before{
+    left: 24px;
+    background:#fff;
+}
+.dark-change.active{
+    border: 2px solid #fff;
+}
+.conteiner_generation {
+    margin-top: 94px;
+    max-width: 620px;
+    height: 386px;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.subtitle {
+    font-weight: 400;
+}
+.conteiner_number{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 14px;
+}
+.subtitle_number {
+    font-size: 30px;
+    font-weight: 700;
+
+    
+}
+.generation_letter {
+    margin-top: 37px;
+    margin-bottom: 10px;
+    font-size: 150px;
+    font-weight: bold;
+    text-align: center;
+}
+.btn {
+    border:none;
+    background-color: #0064FB;
+    width: 200px;
+    height: 55px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+.btn.active{
+    background-color:#F600FB;
+}
+.conteiner_generation.active{
+    border: 1px solid #fff;
+}
+
+@media (max-width: 832px){
+    .title {
+        font-size: 29px;
+    }
+    .generation_letter {
+        font-size: 60px;
+    }
+   
+}
