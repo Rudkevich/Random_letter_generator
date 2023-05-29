@@ -104,6 +104,10 @@ h1,h2{
     color: #fff;
     text-align: center;
     cursor: pointer;
+    transition: 0.5s;
+}
+.btn:hover {
+    letter-spacing: 2px;
 }
 .btn.active{
     background-color:#F600FB;
